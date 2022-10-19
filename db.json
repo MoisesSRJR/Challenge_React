@@ -1,0 +1,84 @@
+{
+  "quantity": {
+    "total": 1
+  },
+  "vagas": [
+    {
+      "id": 2,
+      "area": "Medicina",
+      "titulo": "Médico",
+      "nivel": "Junior",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "responsabilidades": "Lorem Ipsum",
+      "modelo": "Período integral",
+      "formato": "home office",
+      "faixaSalarial": "5000",
+      "beneficios": [],
+      "dataDeExpiracao": "2021-12-31",
+      "candidates": 29,
+      "status": true
+    },
+    {
+      "id": 1,
+      "area": "Medicina",
+      "titulo": "Médico",
+      "nivel": "Junior",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "responsabilidades": "Lorem Ipsum",
+      "modelo": "Período integral",
+      "formato": "home office",
+      "faixaSalarial": "5000",
+      "beneficios": [],
+      "dataDeExpiracao": "2021-12-31",
+      "candidates": 29,
+      "status": true
+    },
+    {
+      "area": "Medicina",
+      "titulo": "Médico",
+      "nivel": "Junior",
+      "responsabilidades": "Lorem Ipsum",
+      "modelo": "Período integral",
+      "formato": "home office",
+      "faixaSalarial": "5000",
+      "beneficios": [],
+      "dataDeExpiracao": "2021-12-31",
+      "candidates": 29,
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "id": 3
+    },
+    {
+      "area": "Medicina",
+      "titulo": "Médico",
+      "nivel": "Junior",
+      "responsabilidades": "Lorem Ipsum",
+      "modelo": "Período integral",
+      "formato": "home office",
+      "faixaSalarial": "5000",
+      "beneficios": [],
+      "dataDeExpiracao": "2021-12-31",
+      "candidates": 29,
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "id": 4
+    },
+    {
+      "area": "Medicina",
+      "titulo": "Médico",
+      "nivel": "Junior",
+      "responsabilidades": "Lorem Ipsum",
+      "modelo": "Período integral",
+      "formato": "home office",
+      "faixaSalarial": "5000",
+      "beneficios": [],
+      "dataDeExpiracao": "2021-12-31",
+      "candidates": 29,
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "id": 5
+    }
+  ]
+}
