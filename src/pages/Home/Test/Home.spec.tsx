@@ -1,8 +1,6 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 import { Home } from '../..';
-
-const mockedOpenModal = jest.fn();
 
 jest.mock('react-router-dom', () => {
   return {
@@ -10,13 +8,14 @@ jest.mock('react-router-dom', () => {
   };
 });
 
-jest.mock('../../contexts/ModalContext', () => ({
-  useModal: () => ({
-    openModal: mockedOpenModal,
-    modalId: 'home',
-    isModalOpen: true,
-  }),
-}));
+jest.mock('../../../contexts/ListMovies/context', () => {
+  return {
+    useMovies: () => ({
+      getListMovies:jest.fn(),
+      
+    }),
+  };
+});
 
 describe('Home Page', () => {
   it('renders correctly', () => {
@@ -25,15 +24,5 @@ describe('Home Page', () => {
     const homePage = screen.getByTestId('home-page');
 
     expect(homePage).toBeInTheDocument();
-  });
-
-  it('fire a event on click in button that opens a modal', () => {
-    render(<Home />);
-
-    const buttonOpenModal = screen.getByTestId('btn-open-modal');
-
-    fireEvent.click(buttonOpenModal);
-
-    expect(mockedOpenModal).toHaveBeenCalled();
   });
 });
